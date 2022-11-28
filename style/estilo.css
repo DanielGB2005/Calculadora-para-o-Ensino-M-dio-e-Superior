@@ -2,15 +2,7 @@
     box-sizing: border-box;
 }
 
-p{
-    font-family: 'Inter', sans-serif;
-    font-size: larger;
-    text-align:justify;
-    color: darkslateblue;
-}
-
 h1{
-
     font-family: 'Inter', sans-serif;
     text-align: center;
 }
@@ -22,10 +14,17 @@ h1{
 body{
     margin: 20px;
     padding: 20px;
+    background: linear-gradient(45deg, darkviolet, violet);
 }
 
-section{
-    background-color:beige;
+#picture{
+    border-radius: 10px;
+}
+
+main{
+    background-color:white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 @media screen and (max-width:520px) {

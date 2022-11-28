@@ -8,43 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
-    <title> Calculador virtual: encontrando raízes de equações do 2º gruau </title>
+    <title> Calculador virtual: encontrando raízes de equações do 2º grau </title>
 </head>
 
 <body>
-    <section> 
+    <main> 
       <h1> Acelerando o Fazer Matemático </h1>
+
+      <script>
+
+        i = alert(" Bem-vindo ao calculador rápido! Ao confirmar essa mensagem, lhe será perguntado sobre os valores de alguns dos termos de uma equação do segundo grau qualquer. Portanto, informe quanto vale cada variável da sua equação: ");
+
+        a = prompt("Quanto vale 'a' na equação polinomial que você deseja trabalhar? ");
+        b = prompt("Quanto vale 'b' na equação polinomial que você deseja trabalhar? ");
+        c = prompt(" Por último, quanto vale 'c' na equação polinomial que você deseja trabalhar? ");
+
+        delta = Math.pow(b,2) -4*a*c;
+
+        r1 = (-b + Math.sqrt(delta)) / (2*a);
+        r2 = (-b - Math.sqrt(delta)) / (2*a);
+
+        if(delta<0){   
+            document.write(" <br/> ____O valor de delta é igual a " +delta);
+            document.write(" </br> A equação em questão aponta para um delta negativo, portanto as raízes não apresentam valores pertencentes ao conjunto dos números reais. ")
+        }
+
+        else{
+           document.write(" <br/> ____O valor de delta é igual a " +delta);
+           document.write(" <br/> ____O valor da primeira raíz é igual a " +r1);
+           document.write(" <br/> ____O valor da segunda raíz é igual a " +r2);
+        } 
+
+      </script>
+
+
       <br>   </br>
-       <script> 
+      <div id = "one">
+          <img src = "./../imgs/bhaskara.webp" id = "picture" alt = "Desculpe, houve um erro que impediu o carregamento do arquivo!" width = "610" height = "400">
+       </div>  
+        <h3> Esperamos ter melhorado a sua experiência com os cálculos, volte sempre! </h3>
+        <h3> Este aplicador estará sempre disponível para auxiliar em atividades que exijam cálculos de equações do 2º grau. </h3>
 
-         i = alert(" Bem-vindo ao calculador rápido! Ao confirmar essa mensagem, lhe será perguntado sobre os valores de alguns dos termos de uma equação do segundo grau qualquer. Portanto, informe quanto vale cada variável da sua equação: ");
-         a = prompt("Quanto vale 'a' na equação polinomial que você deseja trabalhar? ");
-         b = prompt("Quanto vale 'b' na equação polinomial que você deseja trabalhar? ");
-         c = prompt(" Por último, quanto vale 'c' na equação polinomial que você deseja trabalhar? ");
-
-         delta = Math.pow(b,2) -4*a*c;
-
-         r1 = (-b + Math.sqrt(delta)) / (2*a);
-         r2 = (-b - Math.sqrt(delta)) / (2*a);
-
-         document.write(" <br/> O valor de delta é igual a " +delta);
-         document.write(" <br/> O valor da primeira raíz é igual a " +r1);
-         document.write(" <br/> O valor da segunda raíz é igual a " +r2);
-
-           if(delta<0){
-              document.write(" </br> A equação em questão aponta para um delta negativo, portanto as raízes não apresentam valores pertencentes ao conjunto dos números reais. ")
-             }
-
-        </script>
-      
-        <br>   </br>
-          <div id = "one">
-             <img src = "./../imgs/bhaskara.webp" alt = "Desculpe, houve um erro que impediu o carregamento do arquivo!" width = "610" height = "400">
-          </div>  
-           <p> Esperamos ter melhorado a sua experiência com os cálculos, volte sempre! </p>
-           <p> Este aplicador estará sempre disponível para auxiliar em atividades que exijam cálculos de equações do 2º grau. </p>
-
-    </section>   
+    </main>
 
 </body>
 
